@@ -1,0 +1,9 @@
+<div >
+  @for (menu of menus; track menu.route) {
+  <a
+    [routerLink]="'/collection/' + menu.route"
+    >{{ menu.label }}</a
+  >
+  }
+</div>
+<router-outlet></router-outlet>

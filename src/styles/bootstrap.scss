@@ -1,0 +1,64 @@
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 3.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.5,
+  2: $spacer,
+  3: $spacer * 1.5,
+  4: $spacer * 2,
+  5: $spacer * 3,
+);
+
+// OverrideQ default bootstrap border color
+$border-color: $color-border-light;
+
+// Change ratio de contraste pour avoir le texte des boutons en blanc
+$min-contrast-ratio: 3;
+
+// Theme de couleurs
+$theme-colors: (
+  "primary": $color-primary,
+  "secondary": $color-secondary,
+  "tertiary": $color-tertiary,
+  "success": $color-success,
+  "info": $color-info,
+  "warn": $color-warn,
+  "error": $color-error,
+  "light": $color-border-light,
+  "disabled": $color-disabled,
+  "dark": $color-border-dark,
+  "white": white
+);
+
+
+// theme pour les tables
+$table-variants: (
+  "primary": $color-primary,
+  "light": $color-border-light,
+  "dark": $color-border-dark,
+);
+// Import bootstrap
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/root";
+
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/helpers";
+@import "~bootstrap/scss/utilities/api";
+// A commenter si non necessaire
+// @import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/spinners";
+// @import "~bootstrap/scss/buttons";
+
+

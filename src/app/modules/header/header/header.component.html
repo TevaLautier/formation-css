@@ -1,0 +1,18 @@
+<div class="logo">
+  <img src="/assets/images/logo.png" />
+</div>
+<nav>
+  <a routerLink="/home" routerLinkActive="active">
+    <mat-icon>home</mat-icon>
+    <span>Acceuil</span>
+  </a>
+  <a routerLink="/collection" routerLinkActive="active"> Ma collection </a>
+  <a routerLink="/actus" routerLinkActive="active"> Actualités </a>
+  <a routerLink="/forum" routerLinkActive="active"> Forum </a>
+</nav>
+<div class="actions">
+  <div class="search" >
+    <input placeholder="Rechercher..." [(ngModel)]="search" />
+  </div>
+  <mat-icon>search</mat-icon>
+</div>

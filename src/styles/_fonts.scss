@@ -1,0 +1,30 @@
+
+$font-family: Ubuntu;
+
+@mixin font-default() {
+  font-size: 1.2rem;
+  font-family: $font-family;
+}
+
+@mixin font-header-menu() {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: $font-family;
+}
+
+@mixin font-big() {
+  font-size: 2.8rem;
+  font-weight: 600;
+  font-family: $font-family;
+}
+@mixin font-medium() {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: $font-family;
+}
+
+@mixin font-panel-title() {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: $font-family;
+}

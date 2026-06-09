@@ -1,0 +1,61 @@
+@import "colors";
+@import "layout";
+@import "font-face";
+@import "_fonts";
+// a décommenter
+// @import "bootstrap";
+
+html {
+  // pour que 1.2em=12px
+  font-size: 10px;
+  height: 100%;
+}
+
+body {
+  @include font-default();
+  height: 100%;
+  margin: 0;
+}
+
+//************************************
+// Pour que le calcul de width/height inclut la bordure
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.tag {
+  min-width: 4em;
+  border-radius: 2em;
+  padding: 0.3em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--bs-light);
+}
+
+//************************************
+// default style for common HTML tags
+:root{
+  --color-btn: transparent;
+}
+.btn {
+  padding:1em 2em;
+  border-radius: 1rem;
+  border:1px solid transparent;
+  background-color: var(--color-btn);
+  color: white;
+  &:hover{
+    background-color: white;
+    color: var(--color-btn);
+    border-color: var(--color-btn);
+  }
+
+  &-primary {
+    --color-btn: #{$color-primary};
+  }
+  &-secondary {
+    --color-btn: #{$color-secondary};
+  }
+}

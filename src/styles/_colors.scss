@@ -1,0 +1,41 @@
+
+$gray-100: #f8f9fa;
+$gray-300: #dedee1;
+$gray-600: #868e96;
+$gray-800: #343a40;
+
+$color-red: #ee0000;
+$color-orange: #e97c55;
+$color-blue-light: #469cbf;
+$color-blue: #001b80;
+$color-green: #46a353;
+$color-purple: #7e57c2;
+
+
+/**********************/
+
+$color-primary: $color-blue-light;
+$color-secondary: $color-blue;
+$color-tertiary: $color-orange;
+
+$color-error: $color-red;
+$color-warn: $color-orange;
+$color-success: $color-green;
+$color-info: $color-blue-light;
+
+$color-hover-bg: $gray-300;
+$color-hover-fg: $color-secondary;
+$color-hover: $color-hover-fg;
+
+$color-link: black;
+
+$color-border-light: $gray-300;
+$color-border-dark: $gray-800;
+$color-border:$color-border-light;
+
+$color-selected: $color-secondary;
+$color-selected-bg: $color-secondary;
+$color-selected-fg: white;
+
+$color-disabled: $gray-300;
+
