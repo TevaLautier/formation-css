@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { AtomicPageTemplate } from "src/app/modules/ui/atomic-page-template/atomic-page-template";
 
 @Component({
   selector: 'app-my-collection-page-list',
   templateUrl: './my-collection-page-list.component.html',
-  styleUrls: ['./my-collection-page-list.component.scss']
+  styleUrls: ['./my-collection-page-list.component.scss'],
+  imports: [AtomicPageTemplate]
 })
 export class MyCollectionPageListComponent implements OnInit {
   mangas = [

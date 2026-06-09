@@ -1,26 +1,33 @@
-<div class=vignette></div>
-<div class="card">
-  <table>
-    <thead>
-      <tr>
-        <th>Statut</th>
-        <th>Nom</th>
-      </tr>
-    </thead>
-    <tbody>
-      @for (manga of mangas; track $index) {
-      <tr>
-        <td>
-          <div class="tag">{{ manga.nbCollection }}/{{ manga.nbTotal }}</div>
-        </td>
-        <td>{{ manga.label }}</td>
-      </tr>
-      }
-    </tbody>
-  </table>
-</div>
-<div class="btn-list">
-  <a class="btn">AAA</a>
-  <a class="btn">BBB</a>
-  <a class="btn">CCC</a>
-</div>
+<atomic-page-template>
+  <div atomic-page-template-aside>Coucou</div>
+  <h1 atomic-page-template-title>Ma collection</h1>
+  <div atomic-page-template-content>
+    <div class="card">
+      <table>
+        <thead>
+          <tr>
+            <th>Statut</th>
+            <th>Nom</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (manga of mangas; track $index) {
+            <tr>
+              <td>
+                <div class="tag">
+                  {{ manga.nbCollection }}/{{ manga.nbTotal }}
+                </div>
+              </td>
+              <td>{{ manga.label }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+    <div class="btn-list">
+      <a class="btn">AAA</a>
+      <a class="btn">BBB</a>
+      <a class="btn">CCC</a>
+    </div>
+  </div>
+</atomic-page-template>
