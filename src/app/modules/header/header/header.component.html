@@ -1,5 +1,5 @@
 <div class="logo">
-  <img src="/assets/images/logo.png" />
+  <img src="/assets/images/logo.png" alt=""/>
 </div>
 <nav>
   <a routerLink="/home" routerLinkActive="active">
@@ -11,8 +11,10 @@
   <a routerLink="/forum" routerLinkActive="active"> Forum </a>
 </nav>
 <div class="actions">
-  <div class="search" >
-    <input placeholder="Rechercher..." [(ngModel)]="search" />
+  <div class="search" [ngClass]="{ show: searchActive }">
+    <input #searchInput placeholder="Rechercher..." [(ngModel)]="search" />
   </div>
-  <mat-icon>search</mat-icon>
+  <button (click)="flipSearch()">
+    <mat-icon>search</mat-icon>
+  </button>
 </div>
